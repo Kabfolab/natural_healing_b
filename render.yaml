@@ -1,0 +1,6 @@
+services:
+    - type: web
+    name: nature-store-backend
+    env: node
+    buildCommand: npx prisma generate && npm install
+    startCommand: node server.js
